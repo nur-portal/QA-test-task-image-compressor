@@ -2,6 +2,8 @@
 
 ## Overview
 
+This project created on top of the [react-image-compressor](https://github.com/Rahul-Pandey7/react-image-compressor) just for the demo purposes.
+
 A simple image compressor built with [react](https://reactjs.org/) and [browser-image-compression](https://www.npmjs.com/package/browser-image-compression).
 
 ## Functionalities
