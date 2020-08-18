@@ -35,13 +35,18 @@ export default class imageCompressor extends React.Component {
     e.preventDefault();
 
     const options = {
-      maxSizeMB: 1,
+      maxSizeMB: 2,
       maxWidthOrHeight: 500,
       useWebWorker: true
     };
+    console.log('FILE', this.state.originalImage);
+    if (options.maxSizeMB <= this.state.originalImage.size / 1000000) {
+      console.error("Image is too big, can't be Compressed!");
+      return 0;
+    }
 
-    if (options.maxSizeMB >= this.state.originalImage.size / 1024) {
-      alert("Image is too small, can't be Compressed!");
+    if(this.state.originalImage.type === 'image/vnd.microsoft.icon') {
+      console.error(`${this.state.originalImage.type} cannot compress`);
       return 0;
     }
 
@@ -87,7 +92,8 @@ export default class imageCompressor extends React.Component {
             <div className="d-flex justify-content-center">
               <input
                 type="file"
-                accept="image/*"
+                accept="*/*"
+                multiple
                 className="mt-2 btn btn-dark w-75"
                 onChange={e => this.handle(e)}
               />
