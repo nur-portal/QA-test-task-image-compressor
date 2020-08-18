@@ -6,6 +6,11 @@ This project created on top of the [react-image-compressor](https://github.com/R
 
 A simple image compressor built with [react](https://reactjs.org/) and [browser-image-compression](https://www.npmjs.com/package/browser-image-compression).
 
+## Tech specifications:
+1) This application should be able to compress any image types;
+2) No limitations for image size or height/width;
+3) Each image should be uploaded separately.
+
 ## Functionalities
 
 - Compress Image By Reducing Resolution and Size
@@ -20,8 +25,8 @@ A simple image compressor built with [react](https://reactjs.org/) and [browser-
 ## Development
 
 ### Pre-requirements
-Before install the project first you need to install the node on your local machine.
-To check if it already installed enter `node -v` in the terminal. If you see something like this `v13.8.0` you have node installed otherwise follow this link to find installation instrustions https://nodejs.org/en/download/package-manager .
+Before installing the project first you need to install the node on your local machine.
+To check if it already installed enter `node -v` in the terminal. If you see something like this `v13.8.0` you have node installed otherwise follow this link to find installation instructions https://nodejs.org/en/download/package-manager .
 
 1. Clone the repository and change directory.
 
