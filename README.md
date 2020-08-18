@@ -19,6 +19,10 @@ A simple image compressor built with [react](https://reactjs.org/) and [browser-
 
 ## Development
 
+### Pre-requirements
+Before install the project first you need to install the node on your local machine.
+To check if it already installed enter `node -v` in the terminal. If you see something like this `v13.8.0` you have node installed otherwise follow this link to find installation instrustions https://nodejs.org/en/download/package-manager .
+
 1. Clone the repository and change directory.
 
 ```
